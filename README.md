@@ -15,7 +15,7 @@
 * VCC - 1kΩ抵抗 - アノード LED カソード - GND と言う風に配線してください。
 * PB0に負荷があるのでLED2を外さないとプログラムに失敗します。
 * [dtrflipper](./dtrflipper) はシリアルポートのDTRを任意の回数Lowにします。
-
+* avr-gcc, avrdude, gcc, makeなどが必要です。
 # 利用例
 
 ATTiny10のコードのビルドとプログラミング
@@ -25,6 +25,7 @@ ATTiny10のコードのビルドとプログラミング
 dtrflipperのビルド
 
 	$ cd dtrflipper
+	$ make
 
 DTRを5ミリ秒間隔で5回Lowにする
 
